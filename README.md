@@ -2,8 +2,14 @@
 A virtual file system API with Command-line interface and a GUI.
 
 ## Launching
+### Command line
+The main class is CLUserInterface in bin/clui/
 
+`java CLUserInterface`
+### GUI
+The main class is GUInterface in bin/gui/
 
+`java GUInterface`
 ## Command line usage
 - `prompt <vfsName>` activate the prompt and choose a working virtual file system. If no vfsName="-off" the prompt is deactivated.
 - `ls <vfsName> <args> <pathName>` list the information concerning files and directories contained in the position corresponding to pathName. If no vfsName is given, the current working virtual file system is chosen by default. If no pathName is given, the current working directory of the virtual file system is chosen by default. If args="": simple display. If args="-l": display lengths.
