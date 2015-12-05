@@ -28,3 +28,6 @@ The main class is GUInterface in bin/gui/
 - `md <vfsName> <pathName>` creates a new directory with the given pathname. if no vfsName is given , the current working virtual file system is chosen by default.
 - `mf <vfsName> <pathName> <dim>` creates a new file with the given pathname and dimension in bytes. if no vfsName is given , the current working virtual file system is chosen by default.
 - `format <vfsName>` formats a virtual file system. if no vfsName is given , the current working virtual file system is chosen by default.
+
+## About
+Developed by Ayoub SBAI lypnox@gmail.com
