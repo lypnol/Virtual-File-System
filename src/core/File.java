@@ -9,7 +9,7 @@ import exceptions.*;
  * However, it contains a long value containing the position of the first block of data on the virtual disk file.
  * see {@link VirtualFileSystem}.
  * 
- * @author Ayoub
+ * @author ayoub
  */
 public class File extends VNode{
 	

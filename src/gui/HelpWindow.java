@@ -15,7 +15,7 @@ import javax.swing.JButton;
 
 /**
  * 
- * @author omar
+ * @author ayoub
  *
  */
 public class HelpWindow extends JDialog implements ActionListener{

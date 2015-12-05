@@ -11,7 +11,7 @@ import exceptions.*;
  * A representation of a directory in the virtual file system.
  * A Directory object contains a list of files/directories.
  * 
- * @author Ayoub
+ * @author ayoub
  */
 public class Directory extends VNode{
 	

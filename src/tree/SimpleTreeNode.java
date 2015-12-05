@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * A simple representation of a tree structure. 
  * This class is absract because the tree nodes do not contain any information.
- * @author Omar
+ * @author ayoub
  */
 public abstract class SimpleTreeNode implements java.io.Serializable{
 	private static final long serialVersionUID = -8727710124856468534L;

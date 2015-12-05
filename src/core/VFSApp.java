@@ -6,7 +6,7 @@ import exceptions.*;
 
 /**
  * A virtual file system application that can be included in a user interface.
- * @author omar
+ * @author ayoub
  *
  */
 public class VFSApp {

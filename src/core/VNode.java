@@ -7,7 +7,7 @@ import tree.SimpleTreeNode;
 /**
  * An absract representation of a node in the virtual file system tree. 
  * It can be a {@link File} or a  {@link Directory}.
- * @author Ayoub
+ * @author ayoub
  */
 public abstract class VNode extends SimpleTreeNode{
 	

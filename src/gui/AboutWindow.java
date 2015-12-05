@@ -13,7 +13,7 @@ import javax.swing.JLabel;
 
 /**
  * 
- * @author omar
+ * @author ayoub
  *
  */
 public class AboutWindow extends JDialog implements ActionListener{
@@ -32,7 +32,7 @@ public class AboutWindow extends JDialog implements ActionListener{
 		contentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
 		getContentPane().add(contentPanel, BorderLayout.CENTER);
 		{
-			JLabel lblCreatedBy = new JLabel("<html> Version 1.0.0 (Beta) <br> Created by: <br> <b>Omar Skali-lami</b> <br>\r\n<b>Ayoub Sbai</b> <br>");
+			JLabel lblCreatedBy = new JLabel("<html> Version 0.1.0 (Beta) <br> Created by: <br>\r\n<b>Ayoub Sbai lypnox@gmail.com</b> <br>");
 			contentPanel.add(lblCreatedBy);
 		}
 		{

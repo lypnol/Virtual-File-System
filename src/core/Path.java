@@ -2,7 +2,7 @@ package core;
 
 /**
  * Path strings management
- * @author omar
+ * @author ayoub
  *
  */
 public class Path {

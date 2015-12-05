@@ -21,7 +21,7 @@ import exceptions.*;
  * 	the number of blocks depends on how much space does a virtual disk have. Which is defined at its construction.
  * 	- the rest of the virtual disk file contains the serialized VirtualFileSystem object data.
  * 
- * @author Omar
+ * @author ayoub
  */
 public class VirtualFileSystem implements java.io.Serializable{
 
@@ -322,14 +322,9 @@ public class VirtualFileSystem implements java.io.Serializable{
 	 * @param position position of the data block on the virtual disk file
 	 */
 	public void setOccupiedBlock(long position){
-		System.out.println(" -> occupy block");
 		freeBlocks[getBlockIdx(position)] = false;
-		System.out.println(" --> original occupied space: "+this.occupiedSpace);
-		System.out.println(" --> original free space:     "+this.freeSpace);
 		this.occupiedSpace = this.occupiedSpace + ((long)DataSizeInBlock);
-		System.out.println(" --> new occupied space: "+this.occupiedSpace);
 		this.freeSpace = this.freeSpace - ((long)DataSizeInBlock);
-		System.out.println(" --> new free space:     "+this.freeSpace);
 	}
 	
 	/**
@@ -338,13 +333,8 @@ public class VirtualFileSystem implements java.io.Serializable{
 	 */
 	public void setFreeBlock(long position){
 		freeBlocks[getBlockIdx(position)] = true;
-		System.out.println(" -> Free block");
-		System.out.println(" --> original occupied space: "+this.occupiedSpace);
-		System.out.println(" --> original free space:     "+this.freeSpace);
 		this.occupiedSpace = this.occupiedSpace - ((long)DataSizeInBlock);
-		System.out.println(" --> new occupied space: "+this.occupiedSpace);
 		this.freeSpace = this.freeSpace + ((long)DataSizeInBlock);
-		System.out.println(" --> new free space:     "+this.freeSpace);
 	}
 	
 	
@@ -370,10 +360,6 @@ public class VirtualFileSystem implements java.io.Serializable{
 			objectDataOut.writeObject(this);
 			
 			byte[] objectData = byteArrayOut.toByteArray();
-			
-			if(byteArrayOut.size()>objectData.length){
-				System.out.println("hey!!");
-			}
 			
 			vdFile.seek(0);
 			
