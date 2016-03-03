@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<project name="vfs_manager">
+	
+	<target name="clean">
+		<delete dir="./bin"/>
+	</target>
+	
+	<target name="compile" depends="clean">
+		<mkdir dir="./bin"/>
+		<javac destdir="./bin">
+			<src path="./src" />
+			<include name="clui/**" />
+			<include name="tree/**" />
+			<include name="core/**" />
+			<include name="exceptions/**" />
+		</javac>
+	</target>
+	
+	<target name="jar" depends="compile">
+		<jar destfile="./vfsmanager.jar" basedir="./bin">
+			<manifest>
+				<attribute name="Main-Class" value="clui.CLUserInterface"/>
+			</manifest>
+		</jar>
+	</target>
+
+</project>

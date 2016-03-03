@@ -1,11 +1,20 @@
 # Virtual-File-System
 A virtual file system API with Command-line interface and a GUI.
 
+## Building
+Use ant to build the project and generate jar file
+
+`ant jar`
+
 ## Launching
 ### Command line
 The main class is CLUserInterface in bin/clui/
 
 `java CLUserInterface`
+
+Or use jar file:
+
+`java -jar vfsmanager.jar`
 ### GUI
 The main class is GUInterface in bin/gui/
 
